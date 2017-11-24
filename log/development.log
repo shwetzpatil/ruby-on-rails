@@ -313,3 +313,811 @@ Processing by SimplePagesController#index as HTML
 Completed 200 OK in 35ms (Views: 31.8ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-23 13:04:54 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 1001ms (Views: 475.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 13:08:57 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 363ms (Views: 167.2ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 13:09:33 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 23ms (Views: 20.7ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 14:21:18 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 84ms (Views: 80.8ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 14:25:53 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.3ms)
+Completed 200 OK in 19ms (Views: 16.6ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 14:26:06 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 24ms (Views: 21.8ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 14:26:36 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 24ms (Views: 21.0ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 14:26:50 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 19.3ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 14:27:17 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 19ms (Views: 16.8ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 14:27:43 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 20ms (Views: 18.5ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 15:04:04 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 145ms (Views: 142.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 15:14:33 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 52ms (Views: 20.0ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 16:14:49 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 329ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+     6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    11:     
+    12:     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1607349978119231070_70132248171820'
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-23 16:14:59 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+     6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+     8:     
+     9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    11:     
+    12:     <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:9:in `_app_views_layouts_application_html_erb__1607349978119231070_70132214517440'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:15:08 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (52.7ms)
+Completed 500 Internal Server Error in 63ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    1: <h1>Welcome to Bike Berlin</h1>
+    2: <h2>Your source for used bikes in Berlin</h2>
+    3: <%= image_tag("download.jpeg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/simple_pages/index.html.erb:3:in `_app_views_simple_pages_index_html_erb__2979039087596979893_70132220847440'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:15:11 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (9.6ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    1: <h1>Welcome to Bike Berlin</h1>
+    2: <h2>Your source for used bikes in Berlin</h2>
+    3: <%= image_tag("download.jpeg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/simple_pages/index.html.erb:3:in `_app_views_simple_pages_index_html_erb__2979039087596979893_70132254186180'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:15:35 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    1: <h1>Welcome to Bike Berlin</h1>
+    2: <h2>Your source for used bikes in Berlin</h2>
+    3: <%= image_tag("download.jpeg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/simple_pages/index.html.erb:3:in `_app_views_simple_pages_index_html_erb__2979039087596979893_70132214750300'
+Started GET "/" for 127.0.0.1 at 2017-11-23 16:16:00 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (15.6ms)
+Completed 500 Internal Server Error in 27ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    1: <h1>Welcome to Bike Berlin</h1>
+    2: <h2>Your source for used bikes in Berlin</h2>
+    3: <%= image_tag("download.jpeg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/simple_pages/index.html.erb:3:in `_app_views_simple_pages_index_html_erb__2979039087596979893_70132217444520'
+Started GET "/" for 127.0.0.1 at 2017-11-23 16:16:57 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 15ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    1: <h1>Welcome to Bike Berlin</h1>
+    2: <h2>Your source for used bikes in Berlin</h2>
+    3: <%= image_tag("2.jpeg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/simple_pages/index.html.erb:3:in `_app_views_simple_pages_index_html_erb__2979039087596979893_70132247695460'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:17:10 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (8.2ms)
+Completed 500 Internal Server Error in 15ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    1: <h1>Welcome to Bike Berlin</h1>
+    2: <h2>Your source for used bikes in Berlin</h2>
+    3: <%= image_tag("2.jpeg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/simple_pages/index.html.erb:3:in `_app_views_simple_pages_index_html_erb__2979039087596979893_70132247204000'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:17:27 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    4:     <title>Nameofapp</title>
+    5:     
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1607349978119231070_70132256472680'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:17:30 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 17ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    4:     <title>Nameofapp</title>
+    5:     
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    8:     
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1607349978119231070_70132246316280'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:19:16 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (0.6ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    4:     <title>Nameofapp</title>
+    5:     
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1607349978119231070_70132255895120'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:19:21 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (0.4ms)
+Completed 500 Internal Server Error in 15ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    4:     <title>Nameofapp</title>
+    5:     
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:     
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1607349978119231070_70132220968420'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:20:24 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (0.3ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    4:     <title>Nameofapp</title>
+    5:     
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:    
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1607349978119231070_70132220476640'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:25:04 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (0.5ms)
+Completed 500 Internal Server Error in 16ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    4:     <title>Nameofapp</title>
+    5:     
+    6:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    7:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+    8:    
+    9:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+   10:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/javascripts/application.js:15
+app/views/layouts/application.html.erb:7:in `_app_views_layouts_application_html_erb__1607349978119231070_70132220949920'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:28:21 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 20ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    1: <h1>Welcome to Bike Berlin</h1>
+    2: <h2>Your source for used bikes in Berlin</h2>
+    3: <%= image_tag("download.jpeg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/simple_pages/index.html.erb:3:in `_app_views_simple_pages_index_html_erb__2979039087596979893_70132247959220'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-23 16:28:24 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (7.2ms)
+Completed 500 Internal Server Error in 15ms
+
+
+  
+ActionView::Template::Error (couldn't find file 'jquery3' with type 'application/javascript'
+Checked in these paths: 
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/config
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/images
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/coffee-rails-4.2.2/lib/assets/javascripts
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actioncable-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/actionview-5.1.4/lib/assets/compiled
+  /Users/sagarpatil/.rbenv/versions/2.4.2/lib/ruby/gems/2.4.0/gems/turbolinks-source-5.0.3/lib/assets/javascripts
+  /Users/sagarpatil/shwetz/github/ruby-on-rails/node_modules):
+    1: <h1>Welcome to Bike Berlin</h1>
+    2: <h2>Your source for used bikes in Berlin</h2>
+    3: <%= image_tag("download.jpeg") %>
+  
+app/assets/javascripts/application.js:15
+app/views/simple_pages/index.html.erb:3:in `_app_views_simple_pages_index_html_erb__2979039087596979893_70132247235780'
+Started GET "/" for 127.0.0.1 at 2017-11-23 16:29:19 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (740.1ms)
+Completed 200 OK in 1207ms (Views: 838.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 16:29:23 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 24ms (Views: 21.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-23 16:30:08 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 20.8ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-24 08:10:53 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 9ms
+
+
+  
+SyntaxError (/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/simple_pages/index.html.erb:3: syntax error, unexpected ':'
+e_tag("download.jpeg", class : "responsive-img my-image") );
+                              ^
+/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/simple_pages/index.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+: "responsive-img my-image") );
+                              ^):
+  
+app/views/simple_pages/index.html.erb:3: syntax error, unexpected ':'
+app/views/simple_pages/index.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-11-24 08:12:53 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (0.9ms)
+Completed 500 Internal Server Error in 8ms
+
+
+  
+SyntaxError (/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/simple_pages/index.html.erb:3: syntax error, unexpected ':'
+e_tag("download.jpeg", class : "responsive-img my-image") );
+                              ^
+/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/simple_pages/index.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+: "responsive-img my-image") );
+                              ^):
+  
+app/views/simple_pages/index.html.erb:3: syntax error, unexpected ':'
+app/views/simple_pages/index.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-11-24 08:13:55 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (0.7ms)
+Completed 500 Internal Server Error in 376ms
+
+
+  
+SyntaxError (/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/simple_pages/index.html.erb:3: syntax error, unexpected ':'
+e_tag("download.jpeg", class : "responsive-img my-image") );
+                              ^
+/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/simple_pages/index.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+: "responsive-img my-image") );
+                              ^):
+  
+app/views/simple_pages/index.html.erb:3: syntax error, unexpected ':'
+app/views/simple_pages/index.html.erb:3: syntax error, unexpected ')', expecting keyword_end
+Started GET "/" for 127.0.0.1 at 2017-11-24 08:14:21 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (243.5ms)
+Completed 200 OK in 356ms (Views: 354.1ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:15:08 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.7ms)
+Completed 200 OK in 31ms (Views: 27.7ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:15:12 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 23ms (Views: 21.4ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:15:43 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 23ms (Views: 21.0ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:15:48 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 23ms (Views: 21.0ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:17:22 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 24ms (Views: 22.0ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:17:45 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 25ms (Views: 22.1ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:18:07 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 24ms (Views: 21.4ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:18:37 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 25ms (Views: 23.2ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-24 08:19:14 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 27ms (Views: 24.6ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:19:22 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 24ms (Views: 22.2ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:31:28 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.9ms)
+Completed 200 OK in 26ms (Views: 23.6ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:31:30 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 34ms (Views: 31.9ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:32:15 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 25ms (Views: 23.1ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:35:34 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 25ms (Views: 21.7ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:37:37 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 23ms (Views: 20.3ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-24 08:37:45 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 22ms (Views: 19.5ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:44:11 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 31ms (Views: 28.6ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:46:47 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 23ms (Views: 20.6ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:46:50 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (4.1ms)
+Completed 200 OK in 27ms (Views: 25.4ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:47:48 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 43ms (Views: 40.6ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:51:07 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 108ms (Views: 97.4ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:51:30 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 48ms (Views: 46.2ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:51:41 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.9ms)
+Completed 500 Internal Server Error in 20ms
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  height: 80px": expected "{", was ";"):
+     5:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+     6:     
+     7:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     9:    
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    11:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/stylesheets/simple_pages.scss:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2077356715045035606_70135206133660'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:51:42 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.6ms)
+Completed 500 Internal Server Error in 23ms
+
+
+  
+ActionView::Template::Error (Invalid CSS after "  height: 80px": expected "{", was ";"):
+     5:     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+     6:     
+     7:     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+     8:     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track' => true %>
+     9:    
+    10:     <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+    11:     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  
+app/assets/stylesheets/simple_pages.scss:16
+app/views/layouts/application.html.erb:8:in `_app_views_layouts_application_html_erb__2077356715045035606_70135248849000'
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:51:55 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.5ms)
+Completed 200 OK in 25ms (Views: 22.5ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 08:52:39 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 83ms (Views: 80.6ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-24 08:53:08 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 22.4ms)
+
+
