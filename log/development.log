@@ -1178,3 +1178,31 @@ Completed 200 OK in 23ms (Views: 21.1ms)
   [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2017-11-24 11:36:23.854126"], ["updated_at", "2017-11-24 11:36:23.854126"]]
   [1m[35m (1.0ms)[0m  [1m[36mcommit transaction[0m
   [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-11-24 13:18:47 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 204ms (Views: 191.4ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-11-24 13:18:59 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 32ms (Views: 29.4ms)
+
+
+Started GET "/simple_pages/about" for 127.0.0.1 at 2017-11-24 13:19:07 +0000
+Processing by SimplePagesController#about as HTML
+  Rendering simple_pages/about.html.erb within layouts/application
+  Rendered simple_pages/about.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 21ms (Views: 18.5ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-11-24 13:19:21 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 36ms (Views: 32.7ms)
+
+
