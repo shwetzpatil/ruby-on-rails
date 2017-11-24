@@ -1262,3 +1262,10 @@ Processing by SimplePagesController#index as HTML
 Completed 200 OK in 26ms (Views: 23.6ms)
 
 
+Started GET "/" for 127.0.0.1 at 2017-11-24 14:12:58 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 40ms (Views: 36.7ms)
+
+
