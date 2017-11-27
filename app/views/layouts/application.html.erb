@@ -25,22 +25,20 @@
             <span class="icon-bar"></span>
           </button>
           <div class="navbar-brand project-name">
-            <a href="#">
-              <strong>Racer Bikes</strong>
-            </a>
+             <strong><%= link_to "Racer Bikes", root_path %></strong>
           </div>
         </div>
   
         <div class="navbar-collapse collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-right">
-            <li class="nav-item active">
-              <a class="nav-link" href="index.html"><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Home</a>
+            <li class"nav-item active">
+              <%= link_to root_path, class:"nav-link" do %><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Home<% end %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#about"><span class="glyphicon glyphicon-user" aria-hidden="true"></span>About</a>
+              <%= link_to simple_pages_about_path, class:"nav-link" do %><span class="glyphicon glyphicon-user" aria-hidden="true"></span>About<% end %>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#contact"><span class="glyphicon glyphicon-phone" aria-hidden="true">Contact</a>
+              <%= link_to simple_pages_contact_path, class:"nav-link" do %><span class="glyphicon glyphicon-phone" aria-hidden="true">Contact<% end %>
             </li>
           </ul>
         </div>
