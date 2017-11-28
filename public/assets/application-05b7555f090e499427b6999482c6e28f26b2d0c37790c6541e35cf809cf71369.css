@@ -1,0 +1,45 @@
+/* line 5, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/products.scss */
+h1 {
+  color: red;
+  margin-top: 100px;
+  font-size: 30px;
+}
+
+/* line 11, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/products.scss */
+th {
+  color: blue;
+  border: 10x solid black;
+  padding: 20px;
+}
+
+/* line 17, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/products.scss */
+table {
+  border: 1px solid black;
+}
+/* line 13, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/simple_pages.scss */
+.copy-right {
+  text-align: center;
+  color: red;
+  background-color: #b6dded;
+  width: 100%;
+  height: 80px;
+  padding: 20px;
+  line-height: 5px;
+  display: block;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+ */
+
