@@ -9,14 +9,20 @@
 //   margin-top: 100px;  
 //   text-transform: uppercase;
 // }
-
-.copy-right {
-  text-align: center; 
-  color: red;
+body {
+  text-align: center;
+}
+footer {
   background-color: #b6dded;
+  color: red;  
+  position: absolute;
   width: 100%;
-  height: 80px;
-  padding: 20px;
-  line-height: 5px;
+  height: 50px;
+  padding:10px;
   display: block;
+  overflow:auto;
+  text-align:center;
+  float:left;
+  margin-top:50px;
+
 }
