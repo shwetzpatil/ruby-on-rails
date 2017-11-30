@@ -9,16 +9,27 @@
 //   margin-top: 100px;  
 //   text-transform: uppercase;
 // }
-body {
+
+html{
+  position: relative;
+  min-height: 100%;
+}
+body{
+  min-height: 100%;
   text-align: center;
+}
+
+.body-content-wrapper{
+  min-height: 100%;
+  margin-bottom: 60px; //height of the footer plus some padding
 }
 
 .my-image {
   display: inline;
 }
+
 footer {
   background-color: #b6dded;
-  position: absolute;
   color: red;  
   width: 100%;
   bottom: 0;
@@ -29,5 +40,5 @@ footer {
   text-align:center;
   float:left;
   margin-top:50px;
-
+  position: absolute;
 }
