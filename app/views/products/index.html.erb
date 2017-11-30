@@ -2,31 +2,24 @@
 
 <h1>Products</h1>
 
-<table>
-  <thead>
-    <tr>
-      <th>Name</th>
-      <th>Description</th>
-      <th>Image url</th>
-      <th colspan="3"></th>
-    </tr>
-  </thead>
-
-  <tbody>
+<div class="container-fluid">
+  <div class="row">
     <% @products.each do |product| %>
-      <tr>
-        <td><%= product.name %></td>
-        <td><%= product.description %></td>
-        <td><%= product.image_url %></td>
-        <td><%= link_to 'Show', product %></td>
-        <td><%= link_to 'Edit', edit_product_path(product) %></td>
-        <td><%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+      <div class="col-sm-2 col-lg-4 product-display">
+        <a><h3><%= product.name%></h3></a>
+        <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+        <p><%= product.description %></p>
+        <p><%= product.colour %></p>
+        <p>£<%= product.price %></p>
+        <p><%= link_to 'Show', product %>
+        <%= link_to 'Edit', edit_product_path(product) %>
+        <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      </div>
+    <% end %>  
+  </div>
+</div>  
 
 <br>
 
-<%= link_to 'New Product', new_product_path %>
+<div style="font-size:30px;"><%= link_to 'New Product', new_product_path %></div>
  
