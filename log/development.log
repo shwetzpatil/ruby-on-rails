@@ -6870,3 +6870,11 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 32ms (Views: 29.0ms | ActiveRecord: 0.2ms)
 
 
+Started GET "/products" for 127.0.0.1 at 2017-11-30 16:44:46 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/index.html.erb within layouts/application (7.2ms)
+Completed 200 OK in 34ms (Views: 31.6ms | ActiveRecord: 0.3ms)
+
+
