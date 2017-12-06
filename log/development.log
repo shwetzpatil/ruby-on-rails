@@ -8842,3 +8842,118 @@ Completed 200 OK in 33ms (Views: 30.9ms)
   [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY name LIMIT ?[0m  [["LIMIT", 11]]
   [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY name LIMIT ?[0m  [["LIMIT", 11]]
   [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+Started GET "/" for 127.0.0.1 at 2017-12-06 14:56:19 +0000
+Processing by SimplePagesController#landing_page as HTML
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT  "products".* FROM "products" ORDER BY "products"."id" ASC LIMIT ?[0m  [["LIMIT", 1]]
+  Rendering simple_pages/landing_page.html.erb within layouts/application
+  Rendered simple_pages/landing_page.html.erb within layouts/application (2.5ms)
+Completed 200 OK in 581ms (Views: 341.9ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-06 14:56:27 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 99ms (Views: 28.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/show" for 127.0.0.1 at 2017-12-06 14:56:33 +0000
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 65ms (Views: 25.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/index" for 127.0.0.1 at 2017-12-06 14:56:43 +0000
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/index" for 127.0.0.1 at 2017-12-06 14:57:29 +0000
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 27ms (Views: 24.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/" for 127.0.0.1 at 2017-12-06 14:57:34 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 30ms (Views: 27.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders/index" for 127.0.0.1 at 2017-12-06 14:59:23 +0000
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 41ms (Views: 38.2ms)
+
+
+Started GET "/orders/index" for 127.0.0.1 at 2017-12-06 15:01:43 +0000
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 26ms (Views: 24.2ms)
+
+
+Started GET "/orders/index" for 127.0.0.1 at 2017-12-06 15:01:45 +0000
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 28ms (Views: 26.1ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-06 15:01:50 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 24.7ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-06 15:02:17 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 29ms (Views: 26.6ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-06 15:07:33 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 28ms (Views: 25.7ms)
+
+
+Started GET "/orders/show" for 127.0.0.1 at 2017-12-06 15:07:44 +0000
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"show"}
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 27ms (Views: 24.3ms)
+
+
+Started GET "/orders/index" for 127.0.0.1 at 2017-12-06 15:08:02 +0000
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.4ms)
+Completed 200 OK in 33ms (Views: 30.1ms)
+
+
+Started GET "/orders/index" for 127.0.0.1 at 2017-12-06 15:08:07 +0000
+Processing by OrdersController#show as HTML
+  Parameters: {"id"=>"index"}
+  Rendering orders/show.html.erb within layouts/application
+  Rendered orders/show.html.erb within layouts/application (0.5ms)
+Completed 200 OK in 25ms (Views: 23.2ms)
+
+

@@ -2,8 +2,6 @@
   <p id="notice"><%= notice %></p>
 
   <h1>Products</h1>
-
-  <div class="container-fluid">
     <div class="row">
       <% @products.each do |product| %>
         <div class="col-sm-2 col-lg-4 product-display">
@@ -17,9 +15,7 @@
           <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
         </div>
       <% end %>  
-    </div>
-  </div>  
-
+    </div> 
   <br>
 
   <div style="font-size:30px;"><%= link_to 'New Product', new_product_path %></div>

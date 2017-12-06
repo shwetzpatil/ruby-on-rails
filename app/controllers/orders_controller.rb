@@ -2,7 +2,7 @@ class OrdersController < ApplicationController
     
     # GET /products
     def index
-      @welcome="Hellooo World"
+      @order="Your order is here"
     end
 
     def show
