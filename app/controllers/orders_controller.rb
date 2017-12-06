@@ -1,5 +1,8 @@
 class OrdersController < ApplicationController
+    
+    # GET /products
     def index
+      @welcome="Hellooo World"
     end
 
     def show
