@@ -4,7 +4,7 @@
   <h1>Products</h1>
     <div class="row">
       <% @products.each do |product| %>
-      <%= render @products %>
+      <%= render partial: "product", locals: {product: product} %>
       <% end %>  
     </div> 
   <br>

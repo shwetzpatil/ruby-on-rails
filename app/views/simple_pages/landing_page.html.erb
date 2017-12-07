@@ -1,5 +1,5 @@
 <div class="container-fluid body-content-wrapper">  
-  <div id="carousel-example-generic" class="carousel slide container-fluid" data-ride="carousel">
+  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
     <!-- Indicators -->
     <ol class="carousel-indicators">
       <% @products.each do |product| %>
@@ -13,7 +13,8 @@
       <div class="item<%= " active" if product == @products.first %>">
         <%= image_tag(product.image_url, class:"img-responsive") %>
         <div class="carousel-caption">
-          <%= product.name %>
+          <p><%= product.name %></p>
+          <p><%= product.description %></p>
         </div>
       </div>
       <% end %>

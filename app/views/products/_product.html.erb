@@ -1,12 +1,11 @@
-<% @products.each do |product| %>
-        <div class="col-sm-2 col-lg-4 product-display">
-          <a><h3><%= product.name%></h3></a>
-          <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
-          <p><%= product.description %></p>
-          <p><%= product.colour %></p>
-          <p>£<%= product.price %></p>
-          <p><%= link_to 'Show', product %>
-          <%= link_to 'Edit', edit_product_path(product) %>
-          <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
-        </div>
-<% end %>
+
+  <div class="col-sm-2 col-lg-4 product-display">
+    <a><h3><%= product.name%></h3></a>
+    <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+    <p><%= product.description %></p>
+    <p><%= product.colour %></p>
+    <p>£<%= product.price %></p>
+    <p><%= link_to 'Show', product %>
+    <%= link_to 'Edit', edit_product_path(product) %>
+    <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+  </div>
