@@ -13254,3 +13254,853 @@ Processing by ProductsController#index as HTML
 Completed 200 OK in 88ms (Views: 84.4ms | ActiveRecord: 0.3ms)
 
 
+Started GET "/products" for 127.0.0.1 at 2017-12-14 16:59:35 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.3ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/index.html.erb within layouts/application (14.0ms)
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.4ms)
+
+
+  
+SyntaxError (/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/layouts/application.html.erb:35: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+'Home' simple_pages_index_path, class:"nav-link" do @output_
+                              ^
+/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/layouts/application.html.erb:35: syntax error, unexpected keyword_do_block, expecting keyword_end
+ndex_path, class:"nav-link" do @output_buffer.safe_append='<
+                              ^
+/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/layouts/application.html.erb:66: syntax error, unexpected keyword_ensure, expecting end-of-input
+          ensure
+                ^):
+  
+app/views/layouts/application.html.erb:35: syntax error, unexpected tIDENTIFIER, expecting keyword_end
+app/views/layouts/application.html.erb:35: syntax error, unexpected keyword_do_block, expecting keyword_end
+app/views/layouts/application.html.erb:66: syntax error, unexpected keyword_ensure, expecting end-of-input
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:00:32 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.1ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (1.4ms)
+  Rendered products/index.html.erb within layouts/application (14.2ms)
+Completed 500 Internal Server Error in 26ms (ActiveRecord: 0.2ms)
+
+
+  
+SyntaxError (/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/layouts/application.html.erb:35: syntax error, unexpected tIDENTIFIER, expecting ')'
+'Home' simple_pages_index_path, class:"nav-link" );@output_b
+                              ^):
+  
+app/views/layouts/application.html.erb:35: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:00:35 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.2ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/index.html.erb within layouts/application (14.8ms)
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 0.3ms)
+
+
+  
+SyntaxError (/Users/sagarpatil/shwetz/github/ruby-on-rails/app/views/layouts/application.html.erb:35: syntax error, unexpected tIDENTIFIER, expecting ')'
+'Home' simple_pages_index_path, class:"nav-link" );@output_b
+                              ^):
+  
+app/views/layouts/application.html.erb:35: syntax error, unexpected tIDENTIFIER, expecting ')'
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:01:04 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (2.0ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 42ms (Views: 39.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:03:58 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.0ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/index.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 44ms (Views: 41.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2017-12-14 17:04:03 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (3.7ms)
+Completed 200 OK in 54ms (Views: 50.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:04:05 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (7.3ms)
+  Rendered products/_product.html.erb (5.7ms)
+  Rendered products/_product.html.erb (2.3ms)
+  Rendered products/_product.html.erb (3.8ms)
+  Rendered products/index.html.erb within layouts/application (34.4ms)
+Completed 200 OK in 88ms (Views: 83.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 17:04:11 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 54ms (Views: 51.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 17:04:12 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 54ms (Views: 51.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 17:04:30 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 32ms (Views: 28.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 17:04:33 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (0.9ms)
+Completed 200 OK in 48ms (Views: 46.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/order_path" for 127.0.0.1 at 2017-12-14 17:04:34 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/order_path"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/order_path" for 127.0.0.1 at 2017-12-14 17:05:25 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/order_path"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/order_path" for 127.0.0.1 at 2017-12-14 17:05:29 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/order_path"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/order_path" for 127.0.0.1 at 2017-12-14 17:05:54 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/order_path"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/order_path" for 127.0.0.1 at 2017-12-14 17:14:21 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/order_path"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/order_path" for 127.0.0.1 at 2017-12-14 17:14:23 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/order_path"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/order_path" for 127.0.0.1 at 2017-12-14 17:20:32 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/order_path"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/order_path" for 127.0.0.1 at 2017-12-14 17:20:35 +0000
+  
+ActionController::RoutingError (No route matches [GET] "/order_path"):
+  
+actionpack (5.1.4) lib/action_dispatch/middleware/debug_exceptions.rb:63:in `call'
+web-console (3.5.1) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.5.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `catch'
+web-console (3.5.1) lib/web_console/middleware.rb:18:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/show_exceptions.rb:31:in `call'
+railties (5.1.4) lib/rails/rack/logger.rb:36:in `call_app'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `block in call'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `block in tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+activesupport (5.1.4) lib/active_support/tagged_logging.rb:69:in `tagged'
+railties (5.1.4) lib/rails/rack/logger.rb:24:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/remote_ip.rb:79:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/request_id.rb:25:in `call'
+rack (2.0.3) lib/rack/method_override.rb:22:in `call'
+rack (2.0.3) lib/rack/runtime.rb:22:in `call'
+activesupport (5.1.4) lib/active_support/cache/strategy/local_cache_middleware.rb:27:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/executor.rb:12:in `call'
+actionpack (5.1.4) lib/action_dispatch/middleware/static.rb:125:in `call'
+rack (2.0.3) lib/rack/sendfile.rb:111:in `call'
+railties (5.1.4) lib/rails/engine.rb:522:in `call'
+puma (3.11.0) lib/puma/configuration.rb:225:in `call'
+puma (3.11.0) lib/puma/server.rb:624:in `handle_request'
+puma (3.11.0) lib/puma/server.rb:438:in `process_client'
+puma (3.11.0) lib/puma/server.rb:302:in `block in run'
+puma (3.11.0) lib/puma/thread_pool.rb:120:in `block in spawn_thread'
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:20:40 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (10.0ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/index.html.erb within layouts/application (33.5ms)
+Completed 200 OK in 62ms (Views: 57.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:20:44 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (4.4ms)
+  Rendered products/_product.html.erb (2.7ms)
+  Rendered products/_product.html.erb (3.2ms)
+  Rendered products/_product.html.erb (2.6ms)
+  Rendered products/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 61ms (Views: 58.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-12-14 17:20:48 +0000
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (21.7ms)
+  Rendered products/new.html.erb within layouts/application (25.1ms)
+Completed 200 OK in 62ms (Views: 59.3ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-12-14 17:21:03 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z/CXjo8kBsaKAI0e/RoxmC1t9NIks+vT23fH3KooHGDYPnmJx5a4jItA6py4JDeF6GmDtaAF5Iv7f0eT30aZBw==", "product"=>{"name"=>"wdw", "description"=>"dassdas", "image_url"=>"", "colour"=>"dad", "price"=>"3"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour", "price") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "wdw"], ["description", "dassdas"], ["image_url", ""], ["created_at", "2017-12-14 17:21:03.329808"], ["updated_at", "2017-12-14 17:21:03.329808"], ["colour", "dad"], ["price", 3.0]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to 
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 2.0ms)
+
+
+  
+ActionController::ActionControllerError (Cannot redirect to nil!):
+  
+app/controllers/products_controller.rb:31:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 17:30:27 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"z/CXjo8kBsaKAI0e/RoxmC1t9NIks+vT23fH3KooHGDYPnmJx5a4jItA6py4JDeF6GmDtaAF5Iv7f0eT30aZBw==", "product"=>{"name"=>"wdw", "description"=>"dassdas", "image_url"=>"", "colour"=>"dad", "price"=>"3"}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour", "price") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["name", "wdw"], ["description", "dassdas"], ["image_url", ""], ["created_at", "2017-12-14 17:30:27.525670"], ["updated_at", "2017-12-14 17:30:27.525670"], ["colour", "dad"], ["price", 3.0]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 21ms (ActiveRecord: 6.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-14 17:30:27 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 49ms (Views: 46.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:30:32 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (6.1ms)
+  Rendered products/_product.html.erb (2.4ms)
+  Rendered products/_product.html.erb (2.2ms)
+  Rendered products/_product.html.erb (3.4ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (36.4ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-12-14 17:30:41 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 53ms (Views: 49.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:30:43 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (5.0ms)
+  Rendered products/_product.html.erb (2.4ms)
+  Rendered products/_product.html.erb (2.4ms)
+  Rendered products/_product.html.erb (3.9ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/index.html.erb within layouts/application (39.0ms)
+Completed 200 OK in 99ms (Views: 95.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-12-14 17:30:45 +0000
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (7.4ms)
+  Rendered products/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 55ms (Views: 52.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-12-14 17:30:54 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"nEyJEKsnQKNzHYWupHu3+qH+N0wL1JB7PANBFDHvMEKLgmcX45X+6XJd4izhRbHnZPpAK49inyMcC8FbRIG1JQ==", "product"=>{"name"=>"ddf", "description"=>"fdsd", "image_url"=>"dd", "colour"=>"ds", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ddf"], ["description", "fdsd"], ["image_url", "dd"], ["created_at", "2017-12-14 17:30:54.552271"], ["updated_at", "2017-12-14 17:30:54.552271"], ["colour", "ds"]]
+  [1m[35m (2.6ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 9ms (ActiveRecord: 3.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-14 17:30:54 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 44ms (Views: 42.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-14 17:32:45 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.6ms)
+Completed 200 OK in 25ms (Views: 23.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:32:48 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.9ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (2.1ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (3.2ms)
+  Rendered products/index.html.erb within layouts/application (52.8ms)
+Completed 500 Internal Server Error in 69ms (ActiveRecord: 2.1ms)
+
+
+  
+ActionView::Template::Error (The asset "dd" is not present in the asset pipeline.):
+    1: 
+    2:   <div class="col-sm-2 col-lg-4 product-display">
+    3:     <a><h3><%= product.name%></h3></a>
+    4:     <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+    5:     <p><%= product.description %></p>
+    6:     <p><%= product.colour %></p>
+    7:     <p>£<%= product.price %></p>
+  
+app/views/products/_product.html.erb:4:in `_app_views_products__product_html_erb___3516654955788214738_70253365958140'
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253366164140'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253366164140'
+Started GET "/" for 127.0.0.1 at 2017-12-14 17:33:06 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.0ms)
+Completed 200 OK in 31ms (Views: 28.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:33:09 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (5.3ms)
+  Rendered products/_product.html.erb (2.4ms)
+  Rendered products/_product.html.erb (3.1ms)
+  Rendered products/_product.html.erb (2.5ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (3.2ms)
+  Rendered products/index.html.erb within layouts/application (40.8ms)
+Completed 500 Internal Server Error in 55ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The asset "dd" is not present in the asset pipeline.):
+    1: 
+    2:   <div class="col-sm-2 col-lg-4 product-display">
+    3:     <a><h3><%= product.name%></h3></a>
+    4:     <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+    5:     <p><%= product.description %></p>
+    6:     <p><%= product.colour %></p>
+    7:     <p>£<%= product.price %></p>
+  
+app/views/products/_product.html.erb:4:in `_app_views_products__product_html_erb___3516654955788214738_70253365959160'
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253366045280'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253366045280'
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:33:58 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (3.4ms)
+  Rendered products/_product.html.erb (1.4ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (2.9ms)
+  Rendered products/index.html.erb within layouts/application (34.2ms)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 1.0ms)
+
+
+  
+ActionView::Template::Error (The asset "dd" is not present in the asset pipeline.):
+    1: 
+    2:   <div class="col-sm-2 col-lg-4 product-display">
+    3:     <a><h3><%= product.name%></h3></a>
+    4:     <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+    5:     <p><%= product.description %></p>
+    6:     <p><%= product.colour %></p>
+    7:     <p>£<%= product.price %></p>
+  
+app/views/products/_product.html.erb:4:in `_app_views_products__product_html_erb___3516654955788214738_70253376884160'
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253343069080'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253343069080'
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:39:43 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.5ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.5ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (2.9ms)
+  Rendered products/index.html.erb within layouts/application (32.6ms)
+Completed 500 Internal Server Error in 41ms (ActiveRecord: 1.1ms)
+
+
+  
+ActionView::Template::Error (The asset "dd" is not present in the asset pipeline.):
+    1: 
+    2:   <div class="col-sm-2 col-lg-4 product-display">
+    3:     <a><h3><%= product.name%></h3></a>
+    4:     <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+    5:     <p><%= product.description %></p>
+    6:     <p><%= product.colour %></p>
+    7:     <p>£<%= product.price %></p>
+  
+app/views/products/_product.html.erb:4:in `_app_views_products__product_html_erb___3516654955788214738_70253376163300'
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253376581400'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253376581400'
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:39:46 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.3ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (3.8ms)
+  Rendered products/index.html.erb within layouts/application (24.4ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The asset "dd" is not present in the asset pipeline.):
+    1: 
+    2:   <div class="col-sm-2 col-lg-4 product-display">
+    3:     <a><h3><%= product.name%></h3></a>
+    4:     <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+    5:     <p><%= product.description %></p>
+    6:     <p><%= product.colour %></p>
+    7:     <p>£<%= product.price %></p>
+  
+app/views/products/_product.html.erb:4:in `_app_views_products__product_html_erb___3516654955788214738_70253331703440'
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253377215760'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253377215760'
+Started GET "/" for 127.0.0.1 at 2017-12-14 17:40:22 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 27ms (Views: 24.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:40:27 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (20.6ms)
+  Rendered products/_product.html.erb (1.9ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (3.2ms)
+  Rendered products/index.html.erb within layouts/application (46.1ms)
+Completed 500 Internal Server Error in 59ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The asset "dd" is not present in the asset pipeline.):
+    1: 
+    2:   <div class="col-sm-2 col-lg-4 product-display">
+    3:     <a><h3><%= product.name%></h3></a>
+    4:     <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+    5:     <p><%= product.description %></p>
+    6:     <p><%= product.colour %></p>
+    7:     <p>£<%= product.price %></p>
+  
+app/views/products/_product.html.erb:4:in `_app_views_products__product_html_erb___3516654955788214738_70253376280480'
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253376518760'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253376518760'
+Started GET "/" for 127.0.0.1 at 2017-12-14 17:40:35 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 29ms (Views: 26.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-12-14 17:40:39 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (11.0ms)
+Completed 200 OK in 77ms (Views: 68.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:40:41 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (4.6ms)
+  Rendered products/_product.html.erb (2.5ms)
+  Rendered products/_product.html.erb (2.4ms)
+  Rendered products/_product.html.erb (2.4ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (4.3ms)
+  Rendered products/index.html.erb within layouts/application (43.4ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "dd" is not present in the asset pipeline.):
+    1: 
+    2:   <div class="col-sm-2 col-lg-4 product-display">
+    3:     <a><h3><%= product.name%></h3></a>
+    4:     <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+    5:     <p><%= product.description %></p>
+    6:     <p><%= product.colour %></p>
+    7:     <p>£<%= product.price %></p>
+  
+app/views/products/_product.html.erb:4:in `_app_views_products__product_html_erb___3516654955788214738_70253362366720'
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253362616340'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253362616340'
+Started GET "/products/6" for 127.0.0.1 at 2017-12-14 17:40:43 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 33ms (Views: 29.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 17:40:48 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (4.8ms)
+  Rendered products/_product.html.erb (2.9ms)
+  Rendered products/_product.html.erb (8.0ms)
+  Rendered products/_product.html.erb (2.6ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (3.2ms)
+  Rendered products/index.html.erb within layouts/application (45.3ms)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (The asset "dd" is not present in the asset pipeline.):
+    1: 
+    2:   <div class="col-sm-2 col-lg-4 product-display">
+    3:     <a><h3><%= product.name%></h3></a>
+    4:     <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+    5:     <p><%= product.description %></p>
+    6:     <p><%= product.colour %></p>
+    7:     <p>£<%= product.price %></p>
+  
+app/views/products/_product.html.erb:4:in `_app_views_products__product_html_erb___3516654955788214738_70253363593080'
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253363815980'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253363815980'
+Started GET "/" for 127.0.0.1 at 2017-12-14 17:41:27 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (2.1ms)
+Completed 200 OK in 27ms (Views: 24.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 17:41:30 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (167.0ms)
+Completed 500 Internal Server Error in 182ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `order' for #<#<Class:0x00007fca425ded50>:0x00007fca4253f070>):
+    1: <div class="container-fluid body-content-wrapper">
+    2:   <h1><%= @order %></h1>
+    3:   <%= link_to 'show', order %>
+    4:   <%= link_to 'Back', products_path %>
+    5: </div>  
+  
+app/views/orders/index.html.erb:3:in `_app_views_orders_index_html_erb___2187908518455796701_70253336881660'
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 17:43:24 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (112.1ms)
+Completed 500 Internal Server Error in 119ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `order' for #<#<Class:0x00007fca45af55e8>:0x00007fca45ae6ae8>):
+    1: <div class="container-fluid body-content-wrapper">
+    2:   <h1><%= @order %></h1>
+    3:   <%= link_to 'show', order %>
+    4:   <%= link_to 'Back', products_path %>
+    5: </div>  
+  
+app/views/orders/index.html.erb:3:in `_app_views_orders_index_html_erb___2187908518455796701_70253364634320'
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 17:43:27 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (120.6ms)
+Completed 500 Internal Server Error in 128ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `order' for #<#<Class:0x00007fca45af55e8>:0x00007fca45550c78>):
+    1: <div class="container-fluid body-content-wrapper">
+    2:   <h1><%= @order %></h1>
+    3:   <%= link_to 'show', order %>
+    4:   <%= link_to 'Back', products_path %>
+    5: </div>  
+  
+app/views/orders/index.html.erb:3:in `_app_views_orders_index_html_erb___2187908518455796701_70253361679120'
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 17:43:30 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (162.5ms)
+Completed 500 Internal Server Error in 171ms
+
+
+  
+ActionView::Template::Error (undefined local variable or method `order' for #<#<Class:0x00007fca45af55e8>:0x00007fca45d64360>):
+    1: <div class="container-fluid body-content-wrapper">
+    2:   <h1><%= @order %></h1>
+    3:   <%= link_to 'show', order %>
+    4:   <%= link_to 'Back', products_path %>
+    5: </div>  
+  
+app/views/orders/index.html.erb:3:in `_app_views_orders_index_html_erb___2187908518455796701_70253365897600'
