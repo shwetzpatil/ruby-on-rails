@@ -14817,3 +14817,1234 @@ ActionView::Template::Error (The asset "dd" is not present in the asset pipeline
 app/views/products/_product.html.erb:4:in `_app_views_products__product_html_erb___3516654955788214738_70253343722660'
 app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253343802860'
 app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253343802860'
+Started GET "/products" for 127.0.0.1 at 2017-12-14 18:17:59 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.2ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (2.8ms)
+  Rendered products/index.html.erb within layouts/application (22.8ms)
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The asset "dd" is not present in the asset pipeline.):
+    1: 
+    2:   <div class="col-sm-2 col-lg-4 product-display">
+    3:     <a><h3><%= product.name%></h3></a>
+    4:     <p><%= image_tag(product.image_url, class: "img-responsive") %></p>
+    5:     <p><%= product.description %></p>
+    6:     <p><%= product.colour %></p>
+    7:     <p>£<%= product.price %></p>
+  
+app/views/products/_product.html.erb:4:in `_app_views_products__product_html_erb___3516654955788214738_70253362745600'
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253366306100'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253366306100'
+Started GET "/products/10" for 127.0.0.1 at 2017-12-14 18:18:04 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.3ms)
+Completed 200 OK in 32ms (Views: 27.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/2" for 127.0.0.1 at 2017-12-14 18:18:10 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=2):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/5" for 127.0.0.1 at 2017-12-14 18:18:14 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 33ms (Views: 30.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-12-14 18:18:16 +0000
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.6ms)
+  Rendered products/edit.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 35ms (Views: 30.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/8" for 127.0.0.1 at 2017-12-14 18:18:24 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 31ms (Views: 27.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2017-12-14 18:18:29 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=9):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/10" for 127.0.0.1 at 2017-12-14 18:18:33 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 10], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 34ms (Views: 30.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/11" for 127.0.0.1 at 2017-12-14 18:18:36 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"11"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 11], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=11):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/12" for 127.0.0.1 at 2017-12-14 18:18:41 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"12"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 12], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=12):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/13" for 127.0.0.1 at 2017-12-14 18:18:45 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"13"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 13], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=13):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/14" for 127.0.0.1 at 2017-12-14 18:18:48 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"14"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 14], ["LIMIT", 1]]
+Completed 404 Not Found in 1ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=14):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/15" for 127.0.0.1 at 2017-12-14 18:18:51 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"15"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 15], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=15):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/16" for 127.0.0.1 at 2017-12-14 18:18:54 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"16"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 16], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=16):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/2" for 127.0.0.1 at 2017-12-14 18:19:00 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 2], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=2):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/3" for 127.0.0.1 at 2017-12-14 18:19:04 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 3], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.2ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=3):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/4" for 127.0.0.1 at 2017-12-14 18:19:08 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"4"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 4], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=4):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/5" for 127.0.0.1 at 2017-12-14 18:19:12 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.8ms)
+Completed 200 OK in 32ms (Views: 29.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/6/edit" for 127.0.0.1 at 2017-12-14 18:19:15 +0000
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.5ms)
+  Rendered products/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 34ms (Views: 30.7ms | ActiveRecord: 0.1ms)
+
+
+Started GET "/products/6" for 127.0.0.1 at 2017-12-14 18:19:19 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"6"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 6], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.9ms)
+Completed 200 OK in 30ms (Views: 26.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/7" for 127.0.0.1 at 2017-12-14 18:19:23 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"7"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 7], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=7):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products/8" for 127.0.0.1 at 2017-12-14 18:19:26 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 8], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 30ms (Views: 26.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/9" for 127.0.0.1 at 2017-12-14 18:19:33 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"9"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 9], ["LIMIT", 1]]
+Completed 404 Not Found in 2ms (ActiveRecord: 0.1ms)
+
+
+  
+ActiveRecord::RecordNotFound (Couldn't find Product with 'id'=9):
+  
+app/controllers/products_controller.rb:67:in `set_product'
+Started GET "/products.json" for 127.0.0.1 at 2017-12-14 18:19:41 +0000
+Processing by ProductsController#index as JSON
+  Rendering products/index.json.jbuilder
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.json.jbuilder (1.8ms)
+  Rendered products/_product.json.jbuilder (1.0ms)
+  Rendered products/_product.json.jbuilder (1.0ms)
+  Rendered products/_product.json.jbuilder (0.7ms)
+  Rendered products/_product.json.jbuilder (0.5ms)
+  Rendered products/_product.json.jbuilder (0.6ms)
+  Rendered products/_product.json.jbuilder (0.6ms)
+  Rendered products/_product.json.jbuilder (0.6ms)
+  Rendered products/index.json.jbuilder (21.3ms)
+Completed 200 OK in 36ms (Views: 31.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/19" for 127.0.0.1 at 2017-12-14 18:19:59 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (3.8ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.2ms)
+
+
+  
+ActionView::Template::Error (The asset "dd" is not present in the asset pipeline.):
+    13: 
+    14:   <p>
+    15:     <strong>Image url:</strong>
+    16:     <%= image_tag(@product.image_url) %>
+    17:   </p>
+    18: 
+    19:   <p>
+  
+app/views/products/show.html.erb:16:in `_app_views_products_show_html_erb__2311663580766238188_70253377507100'
+Started GET "/products/19/edit" for 127.0.0.1 at 2017-12-14 18:20:04 +0000
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (3.5ms)
+  Rendered products/edit.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 34ms (Views: 31.1ms | ActiveRecord: 0.2ms)
+
+
+Started PATCH "/products/19" for 127.0.0.1 at 2017-12-14 18:20:13 +0000
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"yP88IMt3Lrgbpp+7lPAg5AWcp9P0K0B5LllWa3r9ls7YyVCA5tGjuXVZAqMmwEopzoPZ93LWhBo+sYR9RkOB3A==", "product"=>{"name"=>"ddf", "description"=>"fdsd", "image_url"=>"", "colour"=>"ds", "price"=>""}, "commit"=>"Update Product", "id"=>"19"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[33mUPDATE "products" SET "image_url" = ?, "updated_at" = ? WHERE "products"."id" = ?[0m  [["image_url", ""], ["updated_at", "2017-12-14 18:20:13.130502"], ["id", 19]]
+  [1m[35m (1.9ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/19
+Completed 302 Found in 11ms (ActiveRecord: 2.8ms)
+
+
+Started GET "/products/19" for 127.0.0.1 at 2017-12-14 18:20:13 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.2ms)
+Completed 200 OK in 30ms (Views: 26.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products/19/edit" for 127.0.0.1 at 2017-12-14 18:21:39 +0000
+Processing by ProductsController#edit as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProduct Load (0.1ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering products/edit.html.erb within layouts/application
+  Rendered products/_form.html.erb (6.6ms)
+  Rendered products/edit.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 58ms (Views: 54.1ms | ActiveRecord: 0.1ms)
+
+
+Started PATCH "/products/19" for 127.0.0.1 at 2017-12-14 18:21:42 +0000
+Processing by ProductsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J9Z33TQ7nbmEKCHqA3GZMi6sXBxxmrPuus1NUoOtKiN5ttLjAivYHP/70mvRX/Q/SLRF04QAzTvBfXkWRz1s+Q==", "product"=>{"name"=>"ddf", "description"=>"fdsd", "image_url"=>"", "colour"=>"ds", "price"=>""}, "commit"=>"Update Product", "id"=>"19"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/19
+Completed 302 Found in 4ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/products/19" for 127.0.0.1 at 2017-12-14 18:21:42 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"19"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.2ms)
+Completed 200 OK in 41ms (Views: 37.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 18:21:45 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (5.9ms)
+  Rendered products/_product.html.erb (2.4ms)
+  Rendered products/_product.html.erb (2.6ms)
+  Rendered products/_product.html.erb (3.9ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 80ms (Views: 77.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products.json" for 127.0.0.1 at 2017-12-14 18:22:48 +0000
+Processing by ProductsController#index as JSON
+  Rendering products/index.json.jbuilder
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.json.jbuilder (1.0ms)
+  Rendered products/_product.json.jbuilder (0.3ms)
+  Rendered products/_product.json.jbuilder (0.3ms)
+  Rendered products/_product.json.jbuilder (0.3ms)
+  Rendered products/_product.json.jbuilder (0.3ms)
+  Rendered products/_product.json.jbuilder (0.3ms)
+  Rendered products/_product.json.jbuilder (0.3ms)
+  Rendered products/_product.json.jbuilder (0.3ms)
+  Rendered products/index.json.jbuilder (11.2ms)
+Completed 200 OK in 20ms (Views: 17.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-14 18:30:18 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (1.7ms)
+Completed 200 OK in 26ms (Views: 23.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 18:30:20 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (5.5ms)
+Completed 500 Internal Server Error in 16ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"orders"}, missing required keys: [:id]):
+    1: <div class="container-fluid body-content-wrapper">
+    2:   <h1><%= @order %></h1>
+    3:   <%= link_to 'show', order_path %>
+    4:   <%= link_to 'Back', products_path %>
+    5: </div>  
+  
+app/views/orders/index.html.erb:3:in `_app_views_orders_index_html_erb___2187908518455796701_70253361157040'
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 18:31:51 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 39ms (Views: 36.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 18:32:04 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (20.8ms)
+  Rendered products/_product.html.erb (2.4ms)
+  Rendered products/_product.html.erb (1.6ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/index.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 87ms (Views: 84.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 18:33:02 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (5.0ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"orders"}, missing required keys: [:id]):
+    1: <div class="container-fluid body-content-wrapper">
+    2:   <h1><%= @order %></h1>
+    3:   <%= link_to 'show', order_path %>
+    4:   <%= link_to 'Back', products_path %>
+    5: </div>  
+  
+app/views/orders/index.html.erb:3:in `_app_views_orders_index_html_erb___2187908518455796701_70253359145520'
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 18:33:59 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (1.8ms)
+Completed 200 OK in 30ms (Views: 27.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2017-12-14 18:34:02 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (3.1ms)
+Completed 200 OK in 37ms (Views: 33.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/orders" for 127.0.0.1 at 2017-12-14 18:34:30 +0000
+Processing by OrdersController#index as HTML
+  Rendering orders/index.html.erb within layouts/application
+  Rendered orders/index.html.erb within layouts/application (11.5ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.0ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"edit", :controller=>"products"}, missing required keys: [:id]):
+    1: <div class="container-fluid body-content-wrapper">
+    2:   <h1><%= @order %></h1>
+    3:   <%= link_to 'show', edit_product_path %>
+    4:   <%= link_to 'Back', products_path %>
+    5: </div>  
+  
+app/views/orders/index.html.erb:3:in `_app_views_orders_index_html_erb___2187908518455796701_70253337602300'
+Started GET "/products" for 127.0.0.1 at 2017-12-14 18:37:12 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (11.6ms)
+  Rendered products/_product.html.erb (22.5ms)
+  Rendered products/_product.html.erb (22.4ms)
+  Rendered products/_product.html.erb (1.7ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/index.html.erb within layouts/application (87.7ms)
+Completed 200 OK in 308ms (Views: 218.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products/5" for 127.0.0.1 at 2017-12-14 18:37:16 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"5"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 5], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (2.4ms)
+Completed 200 OK in 78ms (Views: 30.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 18:38:33 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (20.6ms)
+  Rendered products/index.html.erb within layouts/application (25.0ms)
+Completed 500 Internal Server Error in 66ms (ActiveRecord: 0.3ms)
+
+
+  
+ActionView::Template::Error (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+     5:     <p><%= product.description %></p>
+     6:     <p><%= product.colour %></p>
+     7:     <p>£<%= product.price %></p>
+     8:     <p><%= link_to 'Show', product_path %>
+     9:     <%= link_to 'Edit', edit_product_path(product) %>
+    10:     <%= link_to 'Destroy', product, method: :delete, data: { confirm: 'Are you sure?' } %></p>
+    11:   </div>
+  
+app/views/products/_product.html.erb:8:in `_app_views_products__product_html_erb___3516654955788214738_70253376629900'
+app/views/products/index.html.erb:7:in `block in _app_views_products_index_html_erb___1518632996217710151_70253376851540'
+app/views/products/index.html.erb:6:in `_app_views_products_index_html_erb___1518632996217710151_70253376851540'
+Started GET "/products" for 127.0.0.1 at 2017-12-14 18:40:41 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.6ms)
+  Rendered products/_product.html.erb (8.5ms)
+  Rendered products/_product.html.erb (21.6ms)
+  Rendered products/_product.html.erb (14.8ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (80.9ms)
+Completed 200 OK in 215ms (Views: 209.5ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-12-14 18:40:47 +0000
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.4ms)
+  Rendered products/new.html.erb within layouts/application (26.8ms)
+Completed 200 OK in 92ms (Views: 51.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:40:54 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qIzZgKPomx+QSOFCbunPpuXz+x40wfl3c945YtmzJ8m/QjeH61olVZEIhsAr18m7IPeMebB39i9T1rktrN2irg==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:40:54.415975"], ["updated_at", "2017-12-14 18:40:54.415975"], ["colour", "rtr"]]
+  [1m[35m (2.9ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 3.4ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:31:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:41:38 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"qIzZgKPomx+QSOFCbunPpuXz+x40wfl3c945YtmzJ8m/QjeH61olVZEIhsAr18m7IPeMebB39i9T1rktrN2irg==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:41:38.296543"], ["updated_at", "2017-12-14 18:41:38.296543"], ["colour", "rtr"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 7.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:31:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:41:49 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:41:49.694791"], ["updated_at", "2017-12-14 18:41:49.694791"], ["colour", "rtr"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 7.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:31:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:42:26 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:42:26.173412"], ["updated_at", "2017-12-14 18:42:26.173412"], ["colour", "rtr"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 27ms (ActiveRecord: 6.9ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:32:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:42:45 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:42:45.072462"], ["updated_at", "2017-12-14 18:42:45.072462"], ["colour", "rtr"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 5.6ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:32:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:43:17 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:43:17.048271"], ["updated_at", "2017-12-14 18:43:17.048271"], ["colour", "rtr"]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 6.8ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:33:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:43:36 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:43:36.671402"], ["updated_at", "2017-12-14 18:43:36.671402"], ["colour", "rtr"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 6.0ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:33:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:44:32 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:44:32.775413"], ["updated_at", "2017-12-14 18:44:32.775413"], ["colour", "rtr"]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 25ms (ActiveRecord: 7.6ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:34:in `block (2 levels) in create'
+app/controllers/products_controller.rb:30:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:47:56 +0000
+  
+SyntaxError (/Users/sagarpatil/shwetz/github/ruby-on-rails/app/controllers/products_controller.rb:28: syntax error, unexpected tSYMBEG, expecting '('
+    puts @product.:id
+                   ^):
+  
+app/controllers/products_controller.rb:28: syntax error, unexpected tSYMBEG, expecting '('
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:48:06 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:48:06.415400"], ["updated_at", "2017-12-14 18:48:06.415400"], ["colour", "rtr"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.7ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:34:in `block (2 levels) in create'
+app/controllers/products_controller.rb:30:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:50:21 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:50:21.700859"], ["updated_at", "2017-12-14 18:50:21.700859"], ["colour", "rtr"]]
+  [1m[35m (1.4ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 19ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:34:in `block (2 levels) in create'
+app/controllers/products_controller.rb:30:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:50:49 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:50:49.208355"], ["updated_at", "2017-12-14 18:50:49.208355"], ["colour", "rtr"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 6.9ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:33:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:53:35 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:53:35.203788"], ["updated_at", "2017-12-14 18:53:35.203788"], ["colour", "rtr"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 2.8ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:33:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:53:50 +0000
+  
+SyntaxError (/Users/sagarpatil/shwetz/github/ruby-on-rails/app/controllers/products_controller.rb:33: syntax error, unexpected ':', expecting =>
+ successfully created.', :id : @product["id"] }
+                              ^):
+  
+app/controllers/products_controller.rb:33: syntax error, unexpected ':', expecting =>
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:54:32 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"iSE0YBth5EGruu2iVDqgMag4fTaTd1KnSMc7mVZ8vN6ZF1jANsdpQMVFcLrmCsr8YycDEhWKlsRYL+mPasKrzA==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:54:32.900803"], ["updated_at", "2017-12-14 18:54:32.900803"], ["colour", "rtr"]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/new
+Completed 302 Found in 17ms (ActiveRecord: 2.5ms)
+
+
+Started GET "/products/new" for 127.0.0.1 at 2017-12-14 18:54:32 +0000
+Processing by ProductsController#new as HTML
+  Rendering products/new.html.erb within layouts/application
+  Rendered products/_form.html.erb (4.6ms)
+  Rendered products/new.html.erb within layouts/application (24.1ms)
+Completed 200 OK in 339ms (Views: 298.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 18:56:05 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (66.4ms)
+  Rendered products/_product.html.erb (24.3ms)
+  Rendered products/_product.html.erb (20.5ms)
+  Rendered products/_product.html.erb (2.8ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/index.html.erb within layouts/application (201.4ms)
+Completed 200 OK in 276ms (Views: 240.4ms | ActiveRecord: 2.6ms)
+
+
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:56:07 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTIl0b/DTNl1qJfvDtY1ML7JV6eBIfrs5YdOkYzbcUyxBElxkmXB2BtXCve85l/9ddYpgwfcPo/1b5yHsGVmXg==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:56:07.792275"], ["updated_at", "2017-12-14 18:56:07.792275"], ["colour", "rtr"]]
+  [1m[35m (5.0ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 5.6ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:33:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:56:17 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTIl0b/DTNl1qJfvDtY1ML7JV6eBIfrs5YdOkYzbcUyxBElxkmXB2BtXCve85l/9ddYpgwfcPo/1b5yHsGVmXg==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:56:17.586364"], ["updated_at", "2017-12-14 18:56:17.586364"], ["colour", "rtr"]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 5.7ms)
+
+
+  
+ActionController::UrlGenerationError (No route matches {:action=>"show", :controller=>"products"}, missing required keys: [:id]):
+  
+app/controllers/products_controller.rb:33:in `block (2 levels) in create'
+app/controllers/products_controller.rb:29:in `create'
+Started POST "/products" for 127.0.0.1 at 2017-12-14 18:57:25 +0000
+Processing by ProductsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"oTIl0b/DTNl1qJfvDtY1ML7JV6eBIfrs5YdOkYzbcUyxBElxkmXB2BtXCve85l/9ddYpgwfcPo/1b5yHsGVmXg==", "product"=>{"name"=>"ete", "description"=>"retr", "image_url"=>"", "colour"=>"rtr", "price"=>""}, "commit"=>"Create Product"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[32mINSERT INTO "products" ("name", "description", "image_url", "created_at", "updated_at", "colour") VALUES (?, ?, ?, ?, ?, ?)[0m  [["name", "ete"], ["description", "retr"], ["image_url", ""], ["created_at", "2017-12-14 18:57:25.148942"], ["updated_at", "2017-12-14 18:57:25.148942"], ["colour", "rtr"]]
+  [1m[35m (5.1ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products/36
+Completed 302 Found in 24ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/products/36" for 127.0.0.1 at 2017-12-14 18:57:25 +0000
+Processing by ProductsController#show as HTML
+  Parameters: {"id"=>"36"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  Rendering products/show.html.erb within layouts/application
+  Rendered products/show.html.erb within layouts/application (1.4ms)
+Completed 200 OK in 51ms (Views: 32.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:00:06 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (3.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/index.html.erb within layouts/application (70.1ms)
+Completed 200 OK in 96ms (Views: 91.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:05:46 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.2ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.6ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/index.html.erb within layouts/application (52.0ms)
+Completed 200 OK in 77ms (Views: 74.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/simple_pages/index" for 127.0.0.1 at 2017-12-14 19:05:49 +0000
+Processing by SimplePagesController#index as HTML
+  Rendering simple_pages/index.html.erb within layouts/application
+  Rendered simple_pages/index.html.erb within layouts/application (18.7ms)
+Completed 200 OK in 47ms (Views: 44.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:05:51 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.7ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (4.2ms)
+  Rendered products/_product.html.erb (9.4ms)
+  Rendered products/_product.html.erb (2.2ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (1.7ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/index.html.erb within layouts/application (101.0ms)
+Completed 200 OK in 140ms (Views: 136.1ms | ActiveRecord: 0.7ms)
+
+
+Started DELETE "/products/36" for 127.0.0.1 at 2017-12-14 19:06:00 +0000
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"Kuezh4UWoh09XPoW90+VnZYOTneJgY6LhgjviRa/AYY60d8nqLAvHFOjZw5Ff/9QXREwUw98SuiW4D2fKgEWlA==", "id"=>"36"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 36], ["LIMIT", 1]]
+  [1m[35m (0.2ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (2.2ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 36]]
+  [1m[35m (1.7ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 11ms (ActiveRecord: 4.5ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:06:00 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.5ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (1.7ms)
+  Rendered products/_product.html.erb (1.9ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/index.html.erb within layouts/application (61.9ms)
+Completed 200 OK in 103ms (Views: 100.4ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/products/33" for 127.0.0.1 at 2017-12-14 19:06:05 +0000
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"4qtdr6/x8ssaC4Be1F0E2b9fUMhXJG5TcfRMTXUMhyvynTEPgld/ynT0HUZmbW4UdEAu7NHZqjBhHJ5bSbKQOQ==", "id"=>"33"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 33], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 33]]
+  [1m[35m (5.8ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 12ms (ActiveRecord: 6.6ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:06:05 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.4ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.8ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/index.html.erb within layouts/application (61.1ms)
+Completed 200 OK in 112ms (Views: 108.8ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/products/17" for 127.0.0.1 at 2017-12-14 19:06:10 +0000
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"aVFPUmFlrq94q/keZ8LY+yUt034aUnlQAQ5ALCpeqz15ZyPyTMMjrhZUZAbV8rI27jKtWpyvvTMR5pI6FuC8Lw==", "id"=>"17"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 17], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.4ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 17]]
+  [1m[35m (1.3ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 7ms (ActiveRecord: 1.9ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:06:10 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.5ms)
+  Rendered products/_product.html.erb (1.2ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (51.4ms)
+Completed 200 OK in 77ms (Views: 74.4ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/products/18" for 127.0.0.1 at 2017-12-14 19:06:15 +0000
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"0MoQJRidU9hSq186VmWS/c4akjwFPOzxF5LwIyGEM9nA/HyFNTve2TxUwiLkVfgwBQXsGIPBKJIHeiI1HTokyw==", "id"=>"18"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 18], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 18]]
+  [1m[35m (5.4ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 12ms (ActiveRecord: 6.4ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:06:15 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.4ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (3.0ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.9ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 73ms (Views: 69.9ms | ActiveRecord: 0.4ms)
+
+
+Started DELETE "/products/19" for 127.0.0.1 at 2017-12-14 19:06:19 +0000
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"mrfDl1logfBBLJ9e+55NpjKEiPh0jdm4Rc/PSFYaRSKKga83dM4M8S/TAkZJridr+Zv23PJwHdtVJx1eaqRSMA==", "id"=>"19"}
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 19], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.6ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 19]]
+  [1m[35m (5.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 11ms (ActiveRecord: 6.1ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:06:19 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.6ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.8ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (1.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/index.html.erb within layouts/application (50.6ms)
+Completed 200 OK in 87ms (Views: 84.4ms | ActiveRecord: 0.6ms)
+
+
+Started DELETE "/products/20" for 127.0.0.1 at 2017-12-14 19:06:23 +0000
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"fugv7VysqbVwLtJ9bQ/vKCnMjWB64CkN5FN1hJLyKSRu3kNNcQoktB7RT2XfP4Xl4tPzRPwd7W70u6eSrkw+Ng==", "id"=>"20"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 20], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 20]]
+  [1m[35m (6.0ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 12ms (ActiveRecord: 6.9ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:06:23 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.8ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (3.2ms)
+  Rendered products/_product.html.erb (1.1ms)
+  Rendered products/_product.html.erb (1.5ms)
+  Rendered products/_product.html.erb (1.5ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.8ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/index.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 87ms (Views: 83.9ms | ActiveRecord: 0.8ms)
+
+
+Started DELETE "/products/21" for 127.0.0.1 at 2017-12-14 19:06:28 +0000
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"/jwgGIBBHcL040sMevV+0JhHq9aOqYs9RZLSLo6CDF7uCky4reeQw5oc1hTIxRQdU1jV8ghUT15VegA4sjwbTA==", "id"=>"21"}
+  [1m[36mProduct Load (0.2ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 21], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 21]]
+  [1m[35m (5.5ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 12ms (ActiveRecord: 6.8ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:06:28 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.5ms)
+  Rendered products/_product.html.erb (1.6ms)
+  Rendered products/_product.html.erb (2.1ms)
+  Rendered products/_product.html.erb (1.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.6ms)
+  Rendered products/index.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 86ms (Views: 83.1ms | ActiveRecord: 0.5ms)
+
+
+Started DELETE "/products/22" for 127.0.0.1 at 2017-12-14 19:06:34 +0000
+Processing by ProductsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"+os9rKOjYbUzR0mh2WcIF+yl5AD+DAecUAlyAXVMd7vqvVEMjgXstF241LlrV2LaJ7qaJHjxw/9A4aAXSfJgqQ==", "id"=>"22"}
+  [1m[36mProduct Load (0.5ms)[0m  [1m[34mSELECT  "products".* FROM "products" WHERE "products"."id" = ? LIMIT ?[0m  [["id", 22], ["LIMIT", 1]]
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  [1m[35mSQL (0.5ms)[0m  [1m[31mDELETE FROM "products" WHERE "products"."id" = ?[0m  [["id", 22]]
+  [1m[35m (1.2ms)[0m  [1m[36mcommit transaction[0m
+Redirected to http://localhost:3000/products
+Completed 302 Found in 8ms (ActiveRecord: 2.3ms)
+
+
+Started GET "/products" for 127.0.0.1 at 2017-12-14 19:06:34 +0000
+Processing by ProductsController#index as HTML
+  Rendering products/index.html.erb within layouts/application
+  [1m[36mProduct Load (0.3ms)[0m  [1m[34mSELECT "products".* FROM "products"[0m
+  Rendered products/_product.html.erb (2.2ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (1.3ms)
+  Rendered products/_product.html.erb (1.0ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.5ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.4ms)
+  Rendered products/_product.html.erb (0.3ms)
+  Rendered products/_product.html.erb (0.7ms)
+  Rendered products/index.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 73ms (Views: 70.4ms | ActiveRecord: 0.3ms)
+
+
