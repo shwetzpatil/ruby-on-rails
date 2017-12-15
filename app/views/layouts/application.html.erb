@@ -47,9 +47,9 @@
               <%= link_to orders_path, class:"nav-link" do %><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Order<% end %>
             </li>
           </ul>
-          <%= form_with(url: products_path, method: 'get', local:true) do |form| %>
+          <%= form_with(model: @product, method: 'get', local:true) do |form| %>
             <%= form.label :q, 'Search for:' %>
-            <%= form.text_field :q, id: 'q', value: params = [:q] %>
+            <%= text_field_tag(:q, nil) %>
             <%= form.submit 'Search' %>
           <% end %>
         </div>
