@@ -47,7 +47,7 @@
               <%= link_to orders_path, class:"nav-link" do %><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Order<% end %>
             </li>
           </ul>
-          <%= form_with(model: @product, method: 'get', local:true, class: "navbar-form navbar-right") do |form| %>
+          <%= form_with(model: @product_search_obj, method: 'get', local:true, class: "navbar-form navbar-right") do |form| %>
             <%= label_tag(:q, "Search for:") %>
             <%= text_field_tag(:q, "", type: "text", class: "form-control", placeholder: "search text") %>
             <%= submit_tag("Search", class: "btn btn-default")   %>

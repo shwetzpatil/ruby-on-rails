@@ -2,6 +2,8 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+// application layout page
 html{
   position: relative;
   min-height: 100%;
@@ -35,3 +37,20 @@ footer {
   margin-top:50px;
   position: absolute;
 }
+
+
+// contact page
+.contact-info {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+.contact-form {
+  padding: 20px;
+  text-align: left;
+}
+
+.contact-form-body {
+  padding: 30px;
+}
+
