@@ -18,6 +18,11 @@
     <div class="project-name" style="font-family: Lucida Console, Courier, monospace; font-size: 30px;">
       <strong><%= link_to "CoverGirl", root_path %></strong>
     </div>
+
+    <%# setup for gem devise %>
+    <p class="notice"><%= notice %></p>
+    <p class="alert"><%= alert %></p>
+
     <nav class="navbar navigation-wrapper navbar-inverse" role="navigation">
       <div class="container-fluid containe-nav-bar">
         <div class="navbar-header">
@@ -45,6 +50,15 @@
             </li>
             <li class="nav-item">
               <%= link_to orders_path, class:"nav-link" do %><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Order<% end %>
+            </li>
+          </ul>
+          <ul class="nav pull-right">
+            <li>
+              <% if user_signed_in? %>
+                <%= link_to 'Logout', destroy_user_session_path %>
+              <% else %>
+                <%=link_to 'Login', new_user_session_path %>
+              <% end %>    
             </li>
           </ul>
           <%= form_with(model: @product_search_obj, method: 'get', local:true, class: "navbar-form navbar-right") do |form| %>
