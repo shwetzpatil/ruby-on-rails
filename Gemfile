@@ -62,4 +62,8 @@ group :production do
   gem 'rails_12factor'
 end
 
+#Authentication gem
 gem 'devise'
+
+#Authorization gem
+gem 'cancancan', '~> 1.10'
