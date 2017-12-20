@@ -14,3 +14,11 @@
 //= require turbolinks
 //= require jquery3
 //= require_tree .
+
+$(document).on("turbolinks:load", function() {
+  $(".alert").delay(1500).fadeOut(900);
+});
+
+$(document).on("turbolinks:load", function() {
+  $(".currentUser").css("color", "red");
+});
