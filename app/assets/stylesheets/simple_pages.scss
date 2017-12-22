@@ -9,6 +9,7 @@ html{
   min-height: 100%;
 }
 body{
+  background: rgb(102, 102, 101);
   min-height: 100%;
   text-align: center;
 }
@@ -16,11 +17,16 @@ body{
 .body-content-wrapper{
   min-height: 100%;
   margin-bottom: 100px; //height of the footer plus some padding
-  margin-top: 100px;
+  margin-top: 50px;
 }
-
+.item {
+  background: white;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 20px;
+}
 footer {
-  background-color: #b6dded;
+  background-color: #13191b;
   color: red;  
   width: 100%;
   bottom: 0;
@@ -50,3 +56,11 @@ footer {
   padding: 30px;
 }
 
+// index page
+.my-image{
+  width: 100%;
+  text-align: center;
+  padding: 70px;
+  border-radius: 100px;
+ 
+}

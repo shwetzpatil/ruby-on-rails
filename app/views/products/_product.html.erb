@@ -1,6 +1,6 @@
   <div class="col-sm-2 col-lg-4 product-display">
     <a><h3><%= link_to product.name, product %></h3></a>
-    <p><%= link_to image_tag(product.image_url, class: "img-responsive"), product %></p>
+    <p style="display: inline-block"><%= link_to image_tag(product.image_url, class: "img-responsive", size: "300"), product %></p>
     <p><%= product.description %></p>
     <p><%= product.colour %></p>
     <p>£<%= product.price %></p>
