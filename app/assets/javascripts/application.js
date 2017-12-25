@@ -14,6 +14,7 @@
 //= require turbolinks
 //= require jquery3
 //= require_tree .
+//= require_tree ../../../vendor/assets/javascripts/jquery_raty
 
 $(document).on("turbolinks:load", function() {
   $(".alert").delay(1500).fadeOut(900);
