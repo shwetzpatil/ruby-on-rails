@@ -14,4 +14,9 @@
  *= require_self
  *= require_tree ../../../vendor/assets/stylesheets/jquery_raty
  */ 
-  
+.project-name a{
+  font-family: Lucida Console, Courier, monospace; 
+  font-size: 30px;
+  color: palevioletred;
+  text-decoration: none;
+}

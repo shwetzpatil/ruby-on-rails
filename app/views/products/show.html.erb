@@ -7,6 +7,7 @@
       </p>
       <p><%= render 'new_comment' %></p>
       <p><%= render "comments"%></p>
+      <%= will_paginate @comments %>
     </div>
     <div class="col-md-6 text-left">  
       <p>

@@ -1,0 +1,175 @@
+/* line 7, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/products.scss */
+.carousel-caption {
+  text-transform: uppercase;
+  font-size: 50px;
+  color: #969191;
+}
+
+/* line 13, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/products.scss */
+.item {
+  background: white;
+  padding: 20px;
+  margin: 30px;
+  border-radius: 20px;
+}
+
+/* line 21, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/products.scss */
+.product-display a {
+  color: black;
+}
+
+/* line 27, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/products.scss */
+.product-show {
+  background: #d3d3d0;
+  padding: 20px;
+  margin: 50px;
+  border-radius: 50px;
+}
+
+/* line 35, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/products.scss */
+.pagination {
+  display: inline-block;
+  padding: 0px 9px;
+  margin-right: 4px;
+  border-radius: 3px;
+  border: solid 1px #c0c0c0;
+  background: #e9e9e9;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.8), 0px 1px 3px rgba(0, 0, 0, 0.1);
+  font-weight: bold;
+  text-decoration: none;
+  color: #717171;
+}
+
+/* line 48, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/products.scss */
+.product-display .img-responsive {
+  height: 350px;
+}
+/* line 7, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/simple_pages.scss */
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+/* line 11, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/simple_pages.scss */
+body {
+  background: #666665;
+  min-height: 100%;
+  text-align: center;
+}
+
+/* line 17, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/simple_pages.scss */
+.body-content-wrapper {
+  min-height: 100%;
+  margin-bottom: 100px;
+  margin-top: 50px;
+}
+
+/* line 23, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/simple_pages.scss */
+footer {
+  background-color: #13191b;
+  color: red;
+  width: 100%;
+  bottom: 0;
+  height: 50px;
+  padding: 10px;
+  display: block;
+  overflow: auto;
+  text-align: center;
+  float: left;
+  margin-top: 50px;
+  position: absolute;
+}
+
+/* line 40, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/simple_pages.scss */
+.contact-info {
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* line 45, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/simple_pages.scss */
+.contact-form {
+  padding: 20px;
+  text-align: left;
+}
+
+/* line 50, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/simple_pages.scss */
+.contact-form-body {
+  padding: 30px;
+}
+
+/* line 55, /Users/sagarpatil/shwetz/github/ruby-on-rails/app/assets/stylesheets/simple_pages.scss */
+.my-image {
+  width: 100%;
+  text-align: center;
+  padding: 70px;
+  border-radius: 100px;
+}
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+
+
+
+ */
+ 
+.project-name a{
+  font-family: Lucida Console, Courier, monospace; 
+  font-size: 30px;
+  color: palevioletred;
+  text-decoration: none;
+}
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  font-size: 2em;
+}
+
+@font-face {
+  font-family: "raty";
+  font-style: normal;
+  font-weight: normal;
+  src: url("./fonts/raty.eot");
+  src: url("./fonts/raty.eot?#iefix") format("embedded-opentype");
+  src: url("./fonts/raty.svg#raty") format("svg");
+  src: url("./fonts/raty.ttf") format("truetype");
+  src: url("./fonts/raty.woff") format("woff");
+}
+
+.cancel-on-png, .cancel-off-png, .star-on-png, .star-off-png, .star-half-png {
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  font-family: "raty";
+  font-style: normal;
+  font-variant: normal;
+  font-weight: normal;
+  line-height: 1;
+  speak: none;
+  text-transform: none;
+}
+
+.cancel-on-png:before {
+  content: "\e600";
+}
+
+.cancel-off-png:before {
+  content: "\e601";
+}
+
+.star-on-png:before {
+  content: "\f005";
+}
+
+.star-off-png:before {
+  content: "\f006";
+}
+
+.star-half-png:before {
+  content: "\f123";
+}
