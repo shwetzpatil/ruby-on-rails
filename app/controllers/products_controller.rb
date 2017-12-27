@@ -7,10 +7,11 @@ class ProductsController < ApplicationController
     @items_per_row = 3
     if params[:q]
       search_term = params[:q] # return our filtered list here
-      @products = Product.search(search_term)
+      products_to_show = Product.search(search_term)
     else
-      @products = Product.all.paginate(:page => params[:page], :per_page => 9)
+      products_to_show = Product.all
     end
+    @products = products_to_show.paginate(:page => params[:page], :per_page => 9)
   end
 
   # GET /products/1
