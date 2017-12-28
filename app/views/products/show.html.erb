@@ -35,8 +35,11 @@
       </p>
       
       <p>
-        <%= link_to 'Edit', edit_product_path(@product), class:"btn btn-info" %>
+        <% if can? :crud, Product %>
+          <%= link_to 'Edit', edit_product_path(@product), class:"btn btn-info" %>
+        <% end %>
         <%= link_to 'Back', products_path, class:"btn btn-default" %>
+
       </p>
     </div>  
   </div>      

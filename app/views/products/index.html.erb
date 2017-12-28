@@ -1,23 +1,23 @@
 <div class="container-fluid body-content-wrapper">
   <p id="notice"><%= notice %></p>
 
-  <div style="font-size:20px; color:red;"><%= link_to 'New Product', new_product_path %></div>
+  <div style="font-size:20px; color:red;"><% if can? :crud, Product %><%= link_to 'New Product', new_product_path %><% end %></div>
 
   <h1>Products</h1>
   
       <% @products.in_groups_of(@items_per_row).each do |product_group| %>
-  <div class="row">
-      <% product_group.each do |product| %>
-        <% if product.present? %>
-          <%= render partial: "product", locals: {product: product} %>
-        <% end %>
+        <div class="row">
+          <% product_group.each do |product| %>
+            <% if product.present? %>
+              <%= render partial: "product", locals: {product: product} %>
+            <% end %>
+          <% end %>
+        </div> 
       <% end %>
-  </div> 
-    <div class="pagination">
-      <div class="page_info">
-        <%= page_entries_info @products %>
-      </div>
-      <%= will_paginate @products, :container => false %>
-    </div> 
-      <% end %>
+      <div class="pagination">
+        <div class="page_info">
+          <%= page_entries_info @products %>
+        </div>
+        <%= will_paginate @products, :container => false %>
+      </div> 
 </div>
