@@ -41,7 +41,7 @@
         <div class="navbar-collapse collapse" id="navbar-menu">
           <ul class="nav navbar-nav navbar-left">
             <li class"nav-item active">
-              <%= link_to simple_pages_index_path, class:"nav-link" do %><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Home<% end %>
+              <%= link_to root_path, class:"nav-link" do %><span class="glyphicon glyphicon-globe" aria-hidden="true"></span>Home<% end %>
             </li>
             <li class="nav-item">
               <%= link_to products_path, class:"nav-link" do %><span class="glyphicon glyphicon-briefcase" aria-hidden="true"></span>Product<% end %>
@@ -55,13 +55,11 @@
             <li class="nav-item">
               <%= link_to orders_path, class:"nav-link" do %><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Order<% end %>
             </li>
-          </ul>
-          <ul class="nav pull-right">
-            <li>
+            <li class="nav-item">
               <% if user_signed_in? %>
-                <%= link_to 'Logout', destroy_user_session_path %>
+                <%= link_to ('<span class="glyphicon glyphicon-user"></span> Logout').html_safe, destroy_user_session_path %>
               <% else %>
-                <%=link_to 'Login', new_user_session_path %>
+                <%=link_to ('<span class="glyphicon glyphicon-user"></span> Login').html_safe, new_user_session_path %>
               <% end %>    
             </li>
           </ul>
