@@ -1,9 +1,9 @@
 <div class="container-fluid body-content-wrapper">
   <p id="notice"><%= notice %></p>
   <div class="row product-show">
-    <div class="col-md-6">
+    <div class="col-sm-12 col-md-6">
       <p>
-        <%= image_tag(@product.image_url) %>
+        <%= image_tag(@product.image_url, class: 'img-responsive') %>
       </p>
       <p><%= render 'new_comment' %></p>
       <p><%= render "comments"%></p>
