@@ -1,5 +1,15 @@
 <div class="container-fluid body-content-wrapper">
-  <h1><%= @order %></h1>
+  <div class="row">
+    <% @orders.each do |order| %>
+      <div class="col-sm-2 col-md-4">
+        <h1>Order # <%= order.id %></h1>
+          <%= link_to order.product.name, order.product %>
+        </h1>
+        <p><%= order.product.description %></p>
+        <strong>$ <%= order.product.price %></strong>
+      </div><!-- /col -->
+    <% end %>
+  </div>
   <%= link_to 'show', order_path %>
   <%= link_to 'Back', products_path %>
 </div>  

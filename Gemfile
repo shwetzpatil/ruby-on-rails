@@ -71,3 +71,8 @@ gem 'cancancan', '~> 1.10'
 
 #pagination
 gem 'will_paginate', '~> 3.1.1'
+
+#for writing tests
+group :development, :test do
+  gem 'rspec-rails', '~> 3.7'
+end

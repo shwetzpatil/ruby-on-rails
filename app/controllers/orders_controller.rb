@@ -4,7 +4,7 @@ class OrdersController < ApplicationController
     
     # GET /products
     def index
-      @order="Your order is here"
+      @orders = Order.all
     end
 
     def show
