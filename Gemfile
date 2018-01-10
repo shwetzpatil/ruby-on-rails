@@ -12,6 +12,8 @@ gem 'rails', '~> 5.1.4'
 # Use sqlite3 as the database for Active Record
 group :development, :test do
   gem 'sqlite3'
+  #data testing
+  gem "factory_bot_rails", "~> 4.0"
 end
 # Use Puma as the app server
 gem 'puma', '~> 3.7'
@@ -79,3 +81,5 @@ end
 
 #for functionals testing
 gem 'rails-controller-testing'
+
+
