@@ -82,4 +82,7 @@ end
 #for functionals testing
 gem 'rails-controller-testing'
 
+# payment methods
+gem 'stripe'
+
 

@@ -1,5 +1,4 @@
 <div class="container-fluid body-content-wrapper">
-  <p id="notice"><%= notice %></p>
   <div class="row product-show">
     <div class="col-sm-12 col-md-6">
       <p>
@@ -39,8 +38,13 @@
           <%= link_to 'Edit', edit_product_path(@product), class:"btn btn-info" %>
         <% end %>
         <%= link_to 'Back', products_path, class:"btn btn-default" %>
-
       </p>
+
+      <p>
+        <%= form_with(url: '/payments/create') do |form| %>
+          <%= render partial: "shared/stripe_checkout_button" %>
+        <% end %>
+    </p>
     </div>  
   </div>      
 </div>
