@@ -53,7 +53,10 @@
               <%= link_to simple_pages_contact_path, class:"nav-link" do %><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Contact<% end %>
             </li>
             <li class="nav-item">
-              <%= link_to orders_path, class:"nav-link" do %><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Order<% end %>
+              <% if can? :crud, Order %>
+                <%= link_to orders_path, class:"nav-link" do %><span class="glyphicon glyphicon-phone" aria-hidden="true"></span>Order<% end %>
+              <% end %>  
+
             </li>
             <li class="nav-item">
               <% if user_signed_in? %>
