@@ -1,14 +1,18 @@
 <div class="container-fluid body-content-wrapper">
   <div class="row">
-    <% @orders.each do |order| %>
-      <div class="col-sm-2 col-md-4">
-        <h1>Order # <%= order.id %></h1>
-          <%= link_to order.product.name, order.product %>
-        </h1>
-        <p><%= order.product.description %></p>
-        <strong>$ <%= order.product.price %></strong>
-      </div><!-- /col -->
-    <% end %>
+    
+      <% @orders.each do |order| %>
+        <%# if can? :read, order %> <!-- an alternate methode to access current_user orders for that order controller needs only orders=Order.all-->
+        <div class="col-sm-2 col-md-4">
+          <h1>Order # <%= order.id %></h1>
+            <%= link_to order.product.name, order.product %>
+          </h1>
+          <p>Product Name: <%= order.product.description %></p>
+          <strong>Price: $ <%= order.product.price %></strong>
+          <p> Bought by: id <%= order.user.id %> name: <%= order.user.first_name%></p>
+        </div><!-- /col -->
+        <%# end %> 
+      <% end %>
   </div>
   <%= link_to 'show', order_path %>
   <%= link_to 'Back', products_path %>

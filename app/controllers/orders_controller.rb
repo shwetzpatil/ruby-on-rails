@@ -4,10 +4,16 @@ class OrdersController < ApplicationController
     
     # GET /products
     def index
-      @orders = Order.all
+      if current_user.admin?
+        @orders = Order.all 
+      else  
+        @orders = current_user.orders
+        # @orders = Order.where(user_id: current_user.id)
+      end
     end
 
     def show
+      @order = Order.find(params[:id])
     end
     
     def new

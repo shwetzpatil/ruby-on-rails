@@ -32,6 +32,7 @@
       <p><strong>Average Rating:</strong>
       <div class="rated" data-score="<%= @product.average_rating %>"></div> 
       </p>
+      <p>Ordercount:<%= @product.orders.count %></p>
       
       <p>
         <% if can? :crud, Product %>
