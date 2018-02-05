@@ -13,7 +13,9 @@ class PaymentsController < ApplicationController
     else
       redirect_to new_user_registration_path
     end
- 
+    
+    Stripe.api_key = "sk_test_lbEUSBMUAq1125JYgFbSGBA2"
+
     token = params[:stripeToken]
     # Create the charge on Stripe's servers - this will charge the user's card
     begin
@@ -21,6 +23,7 @@ class PaymentsController < ApplicationController
         amount: (@product.price * 100).to_i,
         currency: "gbp",
         source: token,
+        receipt_email: @user.email,
         description: params[:stripeEmail]
       )
       puts "Charge created"
