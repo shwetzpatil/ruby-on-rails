@@ -1,4 +1,4 @@
-var refreshRating = $(document).on("turbolinks:load ajaxSuccess", function() {
+var refreshRating = function() {
   $(".rating").raty({
     starHalf: '<%= asset_path 'star-half.png' %>',
     starOff: '<%= asset_path 'star-off.png' %>',
@@ -15,9 +15,9 @@ var refreshRating = $(document).on("turbolinks:load ajaxSuccess", function() {
       return $(this).attr('data-score');
     }
   });
-});
+};
 
-$(document).on("turbolinks:load", function() {
+$(document).on("turbolinks:load ajaxSuccess", function() {
   refreshRating();
   $(".img-zoom").elevateZoom({
     zoomType: "inner",
