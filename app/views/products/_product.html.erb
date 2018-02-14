@@ -1,12 +1,16 @@
-  <div class="col-sm-2 col-lg-4 product-display">
-    <a><h3><%= link_to product.name, product %></h3></a>
-    <p style="display: inline-block"><%= link_to image_tag(product.image_url, class: "img-responsive", size: "300"), product %></p>
-    <p><%= product.description %></p>
-    <p><%= product.colour %></p>
-    <p>£<%= product.price %></p>
-    <p>
-    <% if can? :crud, Product %>
-      <%= link_to 'Edit', edit_product_path(product), class: "btn btn-sm btn-success" %>
-      <%= link_to 'Destroy', product, class: "btn btn-sm btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></p>
-    <% end %>
-  </div>
+    
+    <div class="col-sm-2 col-lg-4 product-display">
+      <% cache product do %>
+        <a><h3><%= link_to product.name, product %></h3></a>
+        <p style="display: inline-block"><%= link_to image_tag(product.image_url, class: "img-responsive", size: "300"), product %></p>
+        <p><%= product.description %></p>
+        <p><%= product.colour %></p>
+        <p>£<%= product.price %></p>
+        <p>
+      <% end %>    
+      <% if can? :crud, Product %>
+        <%= link_to 'Edit', edit_product_path(product), class: "btn btn-sm btn-success" %>
+        <%= link_to 'Destroy', product, class: "btn btn-sm btn-danger", method: :delete, data: { confirm: 'Are you sure?' } %></p>
+      <% end %>
+    </div>
+ 

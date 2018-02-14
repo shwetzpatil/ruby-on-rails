@@ -85,4 +85,4 @@ gem 'rails-controller-testing'
 # payment methods
 gem 'stripe'
 
-
+gem 'dalli'
