@@ -20,4 +20,13 @@ class Product < ApplicationRecord
     comments.average(:rating).to_f
   end
 
+  def views
+    $redis.get("product:#{id}") # this is equivalent to 'GET product:1'
+  end
+
+  def viewed!
+    logger.debug "BF: inside viewed method of Product model..."
+    $redis.incr("product:#{id}")
+  end
+
 end
