@@ -25,7 +25,6 @@ class Product < ApplicationRecord
   end
 
   def viewed!
-    logger.debug "BF: inside viewed method of Product model..."
     $redis.incr("product:#{id}")
   end
 
