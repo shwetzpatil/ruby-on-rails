@@ -5,6 +5,7 @@
         <%= image_tag(@product.image_url, class: 'img-responsive img-zoom', width: "350", class: "img-zoom", data_zoom_image: "@product.image_url") %>
       </p>
       <p><%= render 'new_comment' %></p>
+      <div class="alert alert-info" style="display:none" role="alert">A new comment was posted!</div>
       <p><%= render "comments"%></p>
       <%= will_paginate @comments %>
     </div>
