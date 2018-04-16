@@ -5,10 +5,18 @@
     </p>
     <p><%= comment.user.first_name %></p>
     <p>
-      <%= comment.user.first_name %> <small><em><%= "#{time_ago_in_words(comment.created_at)} ago" %></em></small>
-      <% if can? :delete, comment %>
-      <%= link_to ('<span class="glyphicon glyphicon-remove"></span>').html_safe, product_comment_path(comment.product, comment), method: :delete, data: { confirm: 'Are you sure?' } %>
+      <%= comment.user.first_name %> <%= "#{time_ago_in_words(comment.created_at)} ago"%>
+      <% if ((defined?(user_ability) && user_ability.can?(:delete, comment)) or (can? :delete, comment)) %>
+      <%= link_to ('<span class="glyphicon glyphicon-remove"></span>').html_safe,
+          product_comment_path(comment.product, comment),
+          method: :delete, data: { confirm: "Are you sure?"} %>
       <% end %>
-    </p>
+      <%# <% if current_user && current_user.admin? %> 
+      <%# <%= link_to ('<span class="glyphicon glyphicon-remove"></span>').html_safe, %>
+      <%# product_comment_path(comment.product, comment), %>
+      <%# method: :delete, data: { confirm: "Are you sure?"} %> 
+      <%# <% end %>
+      </p>
+   
     <p class="comment-body"><%= comment.body %></p>
 </div>
