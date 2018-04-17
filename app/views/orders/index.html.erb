@@ -10,10 +10,10 @@
           <p>Product Name: <%= order.product.description %></p>
           <strong>Price: $ <%= order.product.price %></strong>
           <p> Bought by: id <%= order.user.id %> name: <%= order.user.first_name%></p>
+          <%= link_to 'Show details', order %>
         </div><!-- /col -->
         <%# end %> 
       <% end %>
   </div>
-  <%= link_to 'show', order_path %>
   <%= link_to 'Back', products_path %>
 </div>  
