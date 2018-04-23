@@ -26,11 +26,12 @@ class PaymentsController < ApplicationController
       )
       puts "Charge created"
       if charge.paid
-        Order.create(
+        @order = Order.create(
           user_id: @user.id,
           product_id: params[:product_id],
           total: @product.price * 100,
           )
+          UserMailer.order_placed(@user, @order).deliver_now
           puts "Order created"
           flash[:notice] = "Thank you for purchasing #{@product.name}!"
       end
