@@ -3,9 +3,9 @@
  *
  * The MIT License
  *
- * author:  Washington Botelho
- * github:  wbotelhos/raty
- * version: 2.8.0
+ * @author  : Washington Botelho
+ * @doc     : http://wbotelhos.com/raty
+ * @version : 2.7.1
  *
  */
 
@@ -18,13 +18,7 @@
 
         methods.destroy.call(this.self);
 
-        this.opt = $.extend(
-          true,
-          {},
-          $.fn.raty.defaults,
-          options,
-          this.self.data()
-        );
+        this.opt = $.extend(true, {}, $.fn.raty.defaults, options);
 
         methods._adjustCallback.call(this);
         methods._adjustNumber.call(this);
@@ -479,7 +473,7 @@
       return this.opt.score && this.opt.score >= i ? "starOn" : "starOff";
     },
 
-    _resetTitle: function() {
+    _resetTitle: function(star) {
       for (var i = 0; i < this.opt.number; i++) {
         this.stars[i].title = methods._getHint.call(this, i + 1);
       }
@@ -502,7 +496,7 @@
       if (evt || this.move) {
         name = decimal > 0.5 ? "starOn" : "starHalf";
       } else if (decimal > this.opt.round.down) {
-        // Up: [x.76 .. x.99]
+        // Up:   [x.76 .. x.99]
         name = "starOn";
 
         if (this.opt.halfShow && decimal < this.opt.round.up) {
