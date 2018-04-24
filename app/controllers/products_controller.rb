@@ -9,20 +9,20 @@ class ProductsController < ApplicationController
     if params[:q]
       search_term = params[:q] # return our filtered list here
       products_to_show = Product.search(search_term)
-      if(Rails.cache.read('product_#{search_term}'))
-        @product_count = Rails.cache.read('product_#{search_term}')
-      else
-        @product_count = products_to_show.count
-        Rails.cache.write('product_#{search_term}', @product_count)
-      end
+      # if(Rails.cache.read('product_#{search_term}'))
+      #   @product_count = Rails.cache.read('product_#{search_term}')
+      # else
+      #   @product_count = products_to_show.count
+      #   Rails.cache.write('product_#{search_term}', @product_count)
+      # end
     else
       products_to_show = Product.all
-      if(Rails.cache.read('products'))
-        @product_count = Rails.cache.read('products')
-      else
-        @product_count = products_to_show.count
-        Rails.cache.write('products', @product_count)
-      end
+      # if(Rails.cache.read('products'))
+      #   @product_count = Rails.cache.read('products')
+      # else
+      #   @product_count = products_to_show.count
+      #   Rails.cache.write('products', @product_count)
+      # end
     end
     @products = products_to_show.paginate(:page => params[:page], :per_page => 9)
   end

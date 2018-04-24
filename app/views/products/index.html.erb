@@ -4,7 +4,8 @@
 
   <h1>Products</h1>
   
-    <h2> Total product count: <%= @product_count %> </h2>
+    <%# <h2> Total product count:</h2> %>
+    <%#= @product_count %> 
     <% cache @products do %>
       <% @products.in_groups_of(@items_per_row).each do |product_group| %>
         <div class="row">
